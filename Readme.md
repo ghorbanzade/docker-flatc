@@ -2,6 +2,8 @@
 
 A basic docker container with flatbuffers compiler
 
+[![Build Status](https://travis-ci.com/ghorbanzade/docker-flatc.svg?branch=master)](https://travis-ci.com/ghorbanzade/docker-flatc)
+
 This work is a simplified version of [neomantra/docker-flatbuffers] by
 [Evan Wies] which provides docker tooling for [FlatBuffers].
 It enables using flatbuffers compiler to generate code from flatbuffers
@@ -40,3 +42,4 @@ MIT (c) 2018 Pejman Ghorbanzade
 [neomantra/docker-flatbuffers]: https://github.com/neomantra/docker-flatbuffers
 [Evan Wies]: mailto:evan@neomantra.net
 [FlatBuffers]: https://github.com/google/flatbuffers
+
