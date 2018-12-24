@@ -6,7 +6,7 @@ before_install:
 install: true
 after_success:
   - if [[ "$TRAVIS_BRANCH" == "master" ]]; then
-      docker login -u "$DOCKER_USERNAME" -p "$DOCKER_PASSWORD";
+      echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin;
       docker push ghorbanzade/flatc;
     fi
 notifications:
