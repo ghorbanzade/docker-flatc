@@ -1,0 +1,17 @@
+language: generic
+services:
+  - docker
+before_install:
+  - docker build -t ghorbanzade/flatc .
+install: true
+after_success:
+  - if [[ "$TRAVIS_BRANCH" == "master" ]]; then
+      echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin;
+      docker push ghorbanzade/flatc;
+    fi
+notifications:
+  email:
+    recipients:
+      - pejman@ghorbanzade.com
+    on_success: always
+    on_failure: always
