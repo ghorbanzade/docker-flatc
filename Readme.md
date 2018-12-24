@@ -1,15 +1,16 @@
 # docker-flatc
 
-A basic docker container with flatbuffers compiler
+A basic docker container for flatbuffers compiler
 
 [![Build Status](https://travis-ci.com/ghorbanzade/docker-flatc.svg?branch=master)](https://travis-ci.com/ghorbanzade/docker-flatc)
+[![Image Info](https://images.microbadger.com/badges/image/ghorbanzade/flatc.svg)](https://microbadger.com/images/ghorbanzade/flatc)
 
 This work is a simplified version of [neomantra/docker-flatbuffers] by
 [Evan Wies] which provides docker tooling for [FlatBuffers].
-It enables using flatbuffers compiler to generate code from flatbuffers
-schema file(s) in different languages, without the need to build the
-compiler from source.
-Read more [here](https://github.com/google/flatbuffers/issues/4374).
+It enables using **latest released version** of flatbuffers compiler to
+generate code from flatbuffers schema file(s) in different languages,
+without the need to build the compiler from source
+(Read more [here](https://github.com/google/flatbuffers/issues/4374)).
 This pattern simplifies the docker-based build process of softwares that
 rely on FlatBuffers.
 
@@ -42,4 +43,3 @@ MIT (c) 2018 Pejman Ghorbanzade
 [neomantra/docker-flatbuffers]: https://github.com/neomantra/docker-flatbuffers
 [Evan Wies]: mailto:evan@neomantra.net
 [FlatBuffers]: https://github.com/google/flatbuffers
-
