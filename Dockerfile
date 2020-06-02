@@ -3,7 +3,7 @@
 
 # ---- Build ----
 
-FROM ubuntu:disco as builder
+FROM ubuntu:bionic as builder
 
 RUN apt-get update && apt-get install -y --no-install-recommends \
   ca-certificates cmake curl make g++ \
@@ -17,7 +17,7 @@ RUN ./build.sh
 
 # ---- Production ----
 
-FROM ubuntu:disco
+FROM ubuntu:bionic
 
 LABEL maintainer="pejman@ghorbanzade.com"
 
